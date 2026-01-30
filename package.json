@@ -2,13 +2,14 @@
   "name": "portfolio-website",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://cedev2.github.io/my-portifolia",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "vite build --base=/my-portifolia/",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
